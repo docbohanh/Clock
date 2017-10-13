@@ -1,8 +1,11 @@
 # Clock
+Hướng giải quyết:
+Tạo một hàm cập nhật vị trí của 3 kim đồng hồ sau mỗi giây, bằng cách tính toán góc xoay của từng kim.
 
+File ClockView.xib
 ![Clock 1](https://viblo.asia/uploads/600a7ec8-dda1-428c-a7f2-c195d38de721.png "File Clock.xib")
 
-Trong file ClockView.xib này nhớ chú ý một điểm là chúng ta sẽ có ba cái hình, tương ứng với ba cây kim hiển thị giờ, phút và giây, nhớ là canh chúng nó ở giữa cái khung của đồng hồ, chứ đừng canh cái gốc của nó ở giữa khung theo thực tế.
+Trong file .xib này nhớ chú ý một điểm là chúng ta sẽ có ba cái hình, tương ứng với ba cây kim hiển thị giờ, phút và giây, nhớ là canh chúng nó ở giữa cái khung của đồng hồ, chứ đừng canh cái gốc của nó ở giữa khung theo thực tế, mục đích để xoay kim đồng hồ (xoay view) không bị lệch.
 
 Phân tích:
 Nếu chia cái khung đồng hồ thành một vòng tròn, thì mỗi 1s, cây kim giây sẽ xoay 1 góc là 6 độ = 1/60 của 360 độ. Khi kim giây xoay xong 1 vòng tròn thì kim phút sẽ xoay cũng 1 góc 6 độ. Khi kim phút xoay xong 1 vòng tròn thì kim giờ sẽ xoay 1 góc 30 độ.
