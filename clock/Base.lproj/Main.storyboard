@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="clock" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_wall" translatesAutoresizingMaskIntoConstraints="NO" id="KLw-Po-wVj">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKS-8P-PNt">
+                                <rect key="frame" x="37" y="40" width="300" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="N7j-wg-gqU"/>
+                                    <constraint firstAttribute="width" secondItem="gKS-8P-PNt" secondAttribute="height" multiplier="1:1" id="xEE-5f-ZdO"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.conerRadius">
+                                        <integer key="value" value="150"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KLw-Po-wVj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="93I-4R-EHK"/>
+                            <constraint firstAttribute="trailing" secondItem="KLw-Po-wVj" secondAttribute="trailing" id="Xdf-sL-QTY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KLw-Po-wVj" secondAttribute="bottom" id="bya-Qd-8uq"/>
+                            <constraint firstItem="gKS-8P-PNt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cU8-pL-O1H"/>
+                            <constraint firstItem="KLw-Po-wVj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kE8-Cb-CJu"/>
+                            <constraint firstItem="gKS-8P-PNt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="pd8-Cc-qOh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="clockContainer" destination="gKS-8P-PNt" id="XbQ-7p-y12"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="79" y="-231"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image_wall" width="375" height="667"/>
+    </resources>
+</document>
