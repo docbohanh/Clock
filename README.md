@@ -1,4 +1,4 @@
-# Clock
+# Clock - Đồng hồ treo tường
 ## Hướng giải quyết:
 ```
 Tạo một hàm cập nhật vị trí của 3 kim đồng hồ sau mỗi giây, bằng cách tính toán góc xoay của từng kim.
