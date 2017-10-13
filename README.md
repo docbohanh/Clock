@@ -5,9 +5,9 @@ Tạo một hàm cập nhật vị trí của 3 kim đồng hồ sau mỗi giây
 ```
 
 File ClockView.xib:
-```
+
 ![Clock 1](https://viblo.asia/uploads/600a7ec8-dda1-428c-a7f2-c195d38de721.png "File Clock.xib")
-```
+
 
 Trong file .xib này nhớ chú ý một điểm là chúng ta sẽ có ba cái hình, tương ứng với ba cây kim hiển thị giờ, phút và giây, nhớ là canh chúng nó ở giữa cái khung của đồng hồ, chứ đừng canh cái gốc của nó ở giữa khung theo thực tế, mục đích để xoay kim đồng hồ (xoay view) không bị lệch.
 
