@@ -1,5 +1,4 @@
 # Clock
-[iOS Tạo một cái đồng hồ treo tường đơn giản - Viblo](https://viblo.asia/p/ios-tao-mot-cai-dong-ho-treo-tuong-don-gian-maGK7z1D5j2)
 
 ![Clock 1](https://viblo.asia/uploads/600a7ec8-dda1-428c-a7f2-c195d38de721.png "File Clock.xib")
 
@@ -72,3 +71,6 @@ timer = Timer.scheduledTimer(timeInterval: 1,
                                      userInfo: nil,
                                      repeats: true)
 ```
+
+Chi tiết 
+[iOS Tạo một cái đồng hồ treo tường đơn giản - Viblo](https://viblo.asia/p/ios-tao-mot-cai-dong-ho-treo-tuong-don-gian-maGK7z1D5j2)
